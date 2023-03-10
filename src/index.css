@@ -5,9 +5,59 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #000 !important; */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.validation_form{
+  max-width: 360px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #15172b;
+  border-radius: 20px;
+  height: 400px;
+}
+.section-title{
+ text-align: center; 
+ color: #fff;
+}
+span{
+  color: #fff;
+}
+.form-control, .form-select{
+  margin-bottom: 6px;
+  background-color: #303245 !important;
+}
+
+@media screen and (max-width:550px) and (min-width:300px){
+  .section-title{
+    color:red;
+   }
+   .validation_form{
+     height: 320px;
+   }
+}
+
+.data_list{
+  list-style-type: none;
+  margin: 0px;
+}
+.bolder li{
+  font-weight: 700;
+}
+.data_list li{
+  width: 130px;
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #000;
+}
+#countries{
+  width: 50%;
+  text-align: center;
+  margin: 0px auto;
 }
