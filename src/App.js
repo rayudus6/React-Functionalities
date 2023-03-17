@@ -4,7 +4,7 @@ import Users from './Users';
 import {Link,Route,Routes} from 'react-router-dom';
 import Contact from './Contact';
 import Validation from './Validation';
-import ToDoList from './Country';
+import List from './Country';
 import Practice from './Practice';
 
 
@@ -24,13 +24,14 @@ function App() {
       </ul>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About/>} />
+        <Route path="/about" element={<About name={name}/>} />
         <Route path="/users" element={<Users />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/form" element={<Validation />} />
-        <Route path="/list" element={<ToDoList />} />
+        <Route path="/list" element={<List />} />
         <Route path="/practice" element={<Practice name={name}/>} />
       </Routes>
+      
     </div>
   );
 }

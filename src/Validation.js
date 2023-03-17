@@ -41,7 +41,6 @@ const Validation =() =>{
         const firstName=firstNameRef.current.value;
         const regEx=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         let errors={};
-        // let lastNameErr={};
         let isValid=true;
 
         if(firstName.trim().length <5){

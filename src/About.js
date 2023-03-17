@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from "react";
+import { useParams } from "react-router-dom";
 
 
 const About=(props) =>{
     const [count,setCount]=useState(0);
+    // const params = useParams()
+    console.log("params ===>",props)
 
     useEffect(() =>{
         const res=JSON.parse(localStorage.getItem('number')) || 0
