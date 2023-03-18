@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import { useParams } from "react-router-dom";
 
 
-const About=(props) =>{
+const Count=(props) =>{
     const [count,setCount]=useState(0);
     // const params = useParams()
     console.log("params ===>",props)
@@ -35,4 +35,4 @@ const About=(props) =>{
     )
 }
 
-export default About
+export default Count

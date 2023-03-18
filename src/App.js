@@ -1,10 +1,10 @@
-import About from './About';
+import Count from './Count';
 import Home from './Home';
 import Users from './Users';
 import {Link,Route,Routes} from 'react-router-dom';
-import Contact from './Contact';
+import Contact from './Countries';
 import Validation from './Validation';
-import List from './Country';
+import List from './List';
 import Practice from './Practice';
 
 
@@ -13,9 +13,9 @@ function App() {
   let name="rayudu";
   return (
     <div>
-      <ul>
+      <ul className='navbar'>
         <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">Count</Link></li>
+        <li><Link to="/count">Count</Link></li>
         <li><Link to="/users">Users</Link></li>
         <li><Link to="/contact">Country</Link></li>
         <li><Link to="/form">Form</Link></li>
@@ -24,7 +24,7 @@ function App() {
       </ul>
       <Routes>
         <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<About name={name}/>} />
+        <Route path="/count" element={<Count name={name}/>} />
         <Route path="/users" element={<Users />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/form" element={<Validation />} />
