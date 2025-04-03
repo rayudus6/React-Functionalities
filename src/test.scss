@@ -1,0 +1,25 @@
+$width: "100%";
+
+@mixin center-div {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: $width;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.loader,
+.error {
+  @include center-div;
+}
+
+nav {
+  ul {
+    li {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
